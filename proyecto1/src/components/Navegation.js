@@ -5,9 +5,6 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { createStackNavigator } from "@react-navigation/stack";
 import { AntDesign } from '@expo/vector-icons';
 
-
-
-
 //Importar Screen Principal
 import MenuPrincipal from "./screen/Dash/MenuPrincipal";
 import ScreenLuces from "./screen/Luces/ScreenLuces"
@@ -16,6 +13,9 @@ import ScreenUser from "./screen/Users/ScreenUser"
 import UserDetalles from "./screen/Users/UserDetalles";
 import ScreenPuertas from "./screen/Puertas/ScreenPuertas";
 import Loginp2 from "./screen/Login/Loginp2";
+import FormularioUser from "./screen/Users/FormularioUser";
+import EditarUser from "./screen/Users/EditarUser";
+import NuevoUser from "./screen/Users/NuevoUser";
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -25,9 +25,10 @@ function MyStack(){
         <Stack.Navigator>
             <Stack.Screen name="usuarios" component={ScreenUser}/>
             <Stack.Screen name="detalles" component={UserDetalles}/>
+            <Stack.Screen name="nuevouser" component={NuevoUser}/>
+            <Stack.Screen name="editaruser" component={EditarUser}/>
         </Stack.Navigator>
     )
-
 }
 
 function Mytabs (){

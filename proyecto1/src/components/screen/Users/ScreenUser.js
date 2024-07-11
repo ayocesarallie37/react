@@ -1,20 +1,33 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { Button } from 'react-native-paper';
+import { Button, Card, IconButton } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
 
-
-
+const navegacion = useNavigation();
 
 const ScreenUser = () => {
-    const navegacion = useNavigation()
   return (
-    <View>
-      <Text>Screen User</Text>
-      <Button icon="eye-settings" mode="contained" onPress={()=>navegacion.navigate('detalles')}>
-    Ver detalles
-  </Button>
+    <View style={styles.contenedorprincipal}>
+      <View style={styles.contenedorButon}>
+        <Text>Screen User</Text>
+        <Button theme={{ colors: { primary: 'purple' } }}
+          icon="account"
+          mode="contained"
+          onPress={() => 
+            navegacion.navigate("nuevouser", {
+              hola:'hola mundo',
+              funciondata: 'obtenerdatos'
+            })
+          }>
+          Nuevo usuario
+        </Button>
 
+        <View>
+          <Card mode="contained" elevation={2}>
+
+          </Card>
+        </View>
+      </View>
     </View>
   )
 }
