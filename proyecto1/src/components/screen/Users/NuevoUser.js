@@ -8,6 +8,10 @@ const NuevoUser = ({ route }) => {
     const [email, setEmail] = React.useState("");
     const [user, setUser] = React.useState("");
     const [perfil, setPerfil] = React.useState("");
+
+    const agregarusuario = async ()=>{
+        
+    }
     return (
         <View>
       // Crear los input.
