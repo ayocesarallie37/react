@@ -1,17 +1,17 @@
-import { getFirestore } from 'firebase/firestore';
-import { initializeApp } from 'firebase/app';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-export const FirebaseConfig = {
-  apiKey: "AIzaSyD8VfwIhlTsq_X_8UcvNErATxJ02NUJASk",
-  authDomain: "domo-ut-64c12.firebaseapp.com",
-  projectId: "domo-ut-64c12",
-  storageBucket: "domo-ut-64c12.appspot.com",
-  messagingSenderId: "596478965431",
-  appId: "1:596478965431:web:f596b70e5b1db461d9ff32"
+const firebaseConfig = {
+  apiKey: "AIzaSyAebibGzuBq1Aq0YHe5Um3791UmcII_sPk",
+  authDomain: "proyecto-1-16136.firebaseapp.com",
+  projectId: "proyecto-1-16136",
+  storageBucket: "proyecto-1-16136.appspot.com",
+  messagingSenderId: "562211035998",
+  appId: "1:562211035998:web:c65743b202731a5d470dcf"
 };
 
-const app = initializeApp(FirebaseConfig);
-const bd = getFirestore(app);
-
-export default { app, bd };
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);

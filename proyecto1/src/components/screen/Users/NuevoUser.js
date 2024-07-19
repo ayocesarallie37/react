@@ -1,5 +1,5 @@
 import { Alert, StyleSheet, Text, View } from 'react-native'
-import { TextInput, Button } from ''
+import { TextInput, Button } from 'react-native-paper'
 import React from 'react'
 
 const NuevoUser = ({ route }) => {

@@ -1,8 +1,11 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, Alert } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 import React from 'react'
 
 
 const LoginP1 = () => {
+
+const useNavigation = useNavigation();
   return (
     <View style={styles.contenedor}>
       <Text style={styles.titulo}>HOLA</Text>
